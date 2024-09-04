@@ -1,0 +1,212 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgb(48, 48, 100);
+  font-family:  sans-serif;
+}
+    
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(64, 64, 151);
+  height: 50px;
+
+}
+.nav ul{
+  display: flex;
+  justify-content: center;
+}
+.nav ul li{
+  list-style: none;
+  margin: 0 23px;
+  
+}
+.nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+.left{
+font-size: 1.5rem;
+}
+
+ /* =============NAVBAR CSS ENDS HERE============================ */
+
+
+ .section{
+  display: flex;
+  justify-content: space-around;
+ }
+ .firstsection{
+  
+  width: 40%;
+  
+  margin-left: 80px;
+  margin-top: 120px;
+  font-size: 2rem;
+  font-family: Helvetica Neue', Arial, sans-serif;
+ }
+ /* .btn{
+  margin-left: 10px;
+  background-color: rgb(75, 114, 75);
+  width: 120px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid black;
+ } */
+ .secondsection{
+  
+  margin: 20px 0;
+  align-items: center;
+ }
+ .secondsection img{
+    width: 50%;
+    margin-top: 90px;
+   margin-left: 300px;
+    
+    
+ }
+ .purple{
+  color: rgb(157, 211, 104);
+ }
+ .aboutmain{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+ }
+ .profile{
+  margin-top: 90px;
+  /* padding: 30px; */
+  
+
+ }
+ .profile img{
+  width: 45%;
+  
+  
+ }
+ .about{
+padding: 50px;
+width: 50%;
+margin-top: -85px;
+ }
+.s{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 10px; */
+}
+.name{
+  margin-left:-135px;
+}
+.skills{
+  margin-top: 30px;
+}
+.skill-bar {
+  background-color: #e0e0e0; /* Light grey background for the skill bar */
+  border-radius: 5px;        /* Rounded corners */
+  overflow: hidden;          /* Ensures the inner bar stays within the bounds */
+  width: 100%;               /* Full width to contain the progress */
+  height: 10px;              /* Set the height of the skill bar */
+  margin-bottom: 10px;       /* Space below the skill bar */
+}
+
+.skill-level {
+  height: 100%;              
+  background-color: #5712b2; 
+  transition: width 0.5s ease-in-out; 
+}
+
+/* Specific skill level styling */
+.skill-level.html {
+  width: 85%;               
+}
+
+.skill-level.css {
+  width: 75%;
+}
+
+.skill-level.js {
+  width: 80%;
+}
+
+.skill-level.react {
+  width: 90%;
+}
+
+.skill-level.node {
+  width: 90%;
+}
+
+.skill-level.express {
+  width: 90%;
+}
+
+.skill-level.mongodb {
+  width: 90%;
+}
+
+.skill-level.java {
+  width: 90%;
+}
+
+.skill-level.c-language {
+  width: 80%;
+}
+
+.btn {
+  display: inline-block; /* Makes the link behave like a block-level element */
+  padding: 10px 20px; /* Add padding */
+  margin: 5px; /* Add some margin */
+  font-size: 16px; /* Set font size */
+  color: #fff; /* Set text color */
+  background-color: #007bff; /* Set background color */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Round the corners */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+/* =======================projects css starts here======= */
+.mainBox{
+  padding: 30px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.cardImg1{
+ margin-bottom: 10px;
+  width: 240px;
+  height: 110px;
+}
+.card-title{
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.cardImg2{
+  margin-bottom: 10px;
+   width: 240px;
+   height: 110px;
+ }
+ .cardImg3{
+  margin-bottom: 10px;
+   width: 240px;
+   height: 110px;
+ }
+ .cardImg4{
+  margin-bottom: 10px;
+   width: 240px;
+   height: 110px;
+ }
