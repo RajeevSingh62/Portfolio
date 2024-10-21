@@ -1,80 +1,188 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html,body{
+
+html, body {
   width: 100%;
   height: 100%;
   color: white;
   background-color: rgb(48, 48, 100);
-  font-family:  sans-serif;
+  font-family: sans-serif;
 }
-    
-.nav{
+
+.nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(64, 64, 151);
   height: 50px;
-
+  padding: 0 20px;
+  position: relative;
 }
-.nav ul{
+
+.nav ul {
   display: flex;
   justify-content: center;
-}
-.nav ul li{
   list-style: none;
-  margin: 0 23px;
-  
 }
-.nav ul li a{
+
+.nav ul li {
+  margin: 0 23px;
+}
+
+.nav ul li a {
   text-decoration: none;
   color: white;
 }
-.left{
-font-size: 1.5rem;
+
+.left {
+  font-size: 1.5rem;
 }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  .right ul {
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgb(64, 64, 151);
+    width: 100%;
+    display: none;
+    text-align: center;
+  }
+
+  .right.open ul {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .right ul li {
+    margin: 10px 0;
+  }
+
+  .nav ul li a {
+    padding: 10px 0;
+  }
+}
+
 
  /* =============NAVBAR CSS ENDS HERE============================ */
 
-
- .section{
+ .section {
   display: flex;
-  justify-content: space-around;
- }
- .firstsection{
-  
-  width: 40%;
-  
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.firstsection {
+  width: 45%;
   margin-left: 80px;
   margin-top: 120px;
   font-size: 2rem;
-  font-family: Helvetica Neue', Arial, sans-serif;
- }
- /* .btn{
-  margin-left: 10px;
-  background-color: rgb(75, 114, 75);
-  width: 120px;
-  height: 30px;
-  border-radius: 8px;
-  border: 1px solid black;
- } */
- .secondsection{
-  
-  margin: 20px 0;
-  align-items: center;
- }
- .secondsection img{
-    width: 50%;
-    margin-top: 90px;
-   margin-left: 300px;
-    
-    
- }
- .purple{
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.secondsection {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.secondsection img {
+  width: 100%;
+  margin-top: 90px;
+}
+
+.purple {
   color: rgb(157, 211, 104);
- }
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .firstsection {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .secondsection {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .secondsection img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .btn {
+    width: 150px;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .firstsection {
+    font-size: 1.2rem;
+  }
+
+  .secondsection img {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
  .aboutmain{
   display: flex;
   justify-content: space-around;
@@ -179,34 +287,78 @@ margin-top: -85px;
   background-color: #0056b3; /* Change background color on hover */
 }
 /* =======================projects css starts here======= */
-.mainBox{
+.mainBox {
   padding: 30px;
-    display: flex;
-    margin-top: 30px;
-    justify-content: space-around;
-}
-.cardImg1{
- margin-bottom: 10px;
-  width: 240px;
-  height: 110px;
-}
-.card-title{
-  font-size: 1rem;
-  margin-bottom: 5px;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  gap: 20px; /* Add some space between cards */
 }
 
-.cardImg2{
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 240px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Add a hover effect */
+}
+
+.card img {
   margin-bottom: 10px;
-   width: 240px;
-   height: 110px;
- }
- .cardImg3{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-title {
+  font-size: 1rem;
   margin-bottom: 10px;
-   width: 240px;
-   height: 110px;
- }
- .cardImg4{
-  margin-bottom: 10px;
-   width: 240px;
-   height: 110px;
- }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .mainBox {
+    justify-content: center; /* Center the cards on smaller screens */
+  }
+
+  .card {
+    width: 45%; /* Make cards take up almost half of the screen on tablets */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainBox {
+    flex-direction: column;
+    align-items: center; /* Center the cards on small screens */
+  }
+
+  .card {
+    width: 100%; /* Full width for smaller screens */
+    margin-bottom: 20px;
+  }
+}
