@@ -1,7 +1,5 @@
-
-Here’s a detailed README text that you can paste into your repository:
-
 My Portfolio - React + Vite
+
 Welcome to my Portfolio Website! This website is built using React and Vite for a fast and efficient development environment. The portfolio is deployed on Netlify, and you can view it live by following the link below.
 
 Live Demo
