@@ -18,3 +18,5 @@ Features
 Fast loading times with Vite.
 Responsive Design for better accessibility on different devices.
 Interactive sections with smooth scrolling and animations.
+### Live Demo
+Check out the live version of the portfolio here: [My Portfolio](https://fanciful-tarsier-d55bec.netlify.app/)
